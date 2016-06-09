@@ -8,11 +8,24 @@ a {
 }
 
 .container {
+	width: 200px;
 	display: flex;
 	flex-direction: column;
 }
 
-.container-row {
+.row {
+	flex-direction: row !important;
+}
+
+.row > div {
 	display: flex;
-	flex-direction: row;
+}
+
+p {
+	margin: 10px;
+	margin-left: 0px;
+}
+
+input {
+	margin: 10px;
 }
