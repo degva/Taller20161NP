@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div.container
+		div.title
+			h3 Todo list
+		div.inputs.container
+			input(type="text", placeholder="Nuevo item")
+			button#agg_item Agregar
+		div.items.container
+			div.container-row
+				input(type="checkbox")
+				p hey
+
