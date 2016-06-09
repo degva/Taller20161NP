@@ -3,10 +3,10 @@ var pgConn = {
   // will make the pg-promise reconnect
   getConnObj : function() {
     return {
-      host: 'localhost',
+      host: '192.168.182.128',
       port: 5432,
-      database: 'cs_univ',
-      user: 'postgres'
+      database: 'postgres',
+      user: 'degva'
     }
   }
 }

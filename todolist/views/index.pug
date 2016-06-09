@@ -1,21 +1,15 @@
 extends layout
 
 block content
-	div.container
+	div.container(ng-controller="mainController")
 		div.title
 			h3 Todo list
 		div.inputs.container
 			input(type="text", placeholder="Nuevo item")
 			button#agg_item Agregar
 		div.items.container
-			div.row
-				div.container.row
-					input(type="checkbox")
-					p hey
-				div.container.row
-					input(type="checkbox")
-					p hey
-				div.container.row
-					input(type="checkbox")
-					p hey
+			div.row(ng-repeat="todo in todoData")
+				div.container.row(data-id="{{ todo.id }}")
+					input(ng-checked="{{ todo.done }}", type="checkbox")
+					p {{ todo.description }}
 
