@@ -46,7 +46,7 @@ var todoeng = {
 		db.many(query)
 			.then(function(data) {
 				data.forEach(function(item) {
-					items.push({"id": item.item_id, "description": item.description, "done": item.hecho});
+					items.push({"id": item.item_id, "description": item.descripcion, "done": item.hecho});
 				});
 				res.status(200);
 				res.json(items);
