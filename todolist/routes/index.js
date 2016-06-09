@@ -15,8 +15,8 @@ router.post('/api/v1/items', todoeng.createItem);
 // Obtener todos los items
 router.get('/api/v1/items', todoeng.getItems);
 // actualizar un item (ponerlo como hecho)
-route.update('/api/v1/items/:id', todoeng.changeState);
+router.put('/api/v1/items/:id', todoeng.changeState);
 // eliminar un item
-route.delete('/api/v1/items/:id', todoeng.deleteItem);
+router.delete('/api/v1/items/:id', todoeng.deleteItem);
 
 module.exports = router;

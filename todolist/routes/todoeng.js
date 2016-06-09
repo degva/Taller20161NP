@@ -37,7 +37,7 @@ var todoeng = {
 				});
 			});
 	},
-	getItems: function(req, res {
+	getItems: function(req, res) {
 		var db = pgp(pgCn);
 
 		var query = "SELECT item_id, descripcion, hecho FROM items";
