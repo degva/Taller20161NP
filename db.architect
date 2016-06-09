@@ -39,7 +39,7 @@
     <column id="COL8" populated="true" UUID="8e72d647-907c-4ac3-992d-4855c87b0630" autoIncrement="true" autoIncrementSequenceName="items_item_id_seq" defaultValue="" name="item_id" nullable="0" physicalName="item_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL9" populated="true" UUID="3ddca0f2-ee24-4b25-b16e-b79ce4340218" autoIncrement="false" autoIncrementSequenceName="categorías_categoria_id_seq_1" defaultValue="" name="categoria_id" nullable="1" physicalName="categoria_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL9" populated="true" UUID="3ddca0f2-ee24-4b25-b16e-b79ce4340218" autoIncrement="false" autoIncrementSequenceName="categorías_categoria_id_seq_1" defaultValue="" name="categoria_id" nullable="1" physicalName="categoria_id" precision="0" referenceCount="0" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL10" populated="true" UUID="ec6ec056-f54a-46f1-8ef2-46bd1e50783f" autoIncrement="false" autoIncrementSequenceName="items_descripcion_seq" defaultValue="" name="descripcion" nullable="0" physicalName="descripcion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -66,18 +66,15 @@
    </folder>
   </table>
   <relationships>
-   <relationship id="REL16" populated="true" UUID="a2b80fe9-2c70-480a-9e62-da041d68e5bf" deferrability="7" deleteRule="3" fk-table-ref="TAB7" fkCardinality="7" identifying="false" name="categorías_items_fk" physicalName="categor_as_items_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP17" populated="true" UUID="a104e805-3d8c-4d2e-b905-533bf3d2087c" fk-column-ref="COL9" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
-   </relationship>
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.6817928305074288" viewportX="0" viewportY="153" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="1.6817928305074288" viewportX="0" viewportY="128" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="445" y="376" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB7" x="473" y="548" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL16" pkConnection="0.7233201581027668" fkConnection="0.19230769230769232" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="" pkConnection="0.7233201581027668" fkConnection="0.19230769230769232" rLineColor="0x333333" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">

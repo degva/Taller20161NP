@@ -5,11 +5,12 @@ block content
 		div.title
 			h3 Todo list
 		div.inputs.container
-			input(type="text", placeholder="Nuevo item")
-			button#agg_item Agregar
+			input(type="text", placeholder="Nuevo item...", ng-model="formData.description")
+			button#agg_item(ng-click="createTodo()") Agregar
 		div.items.container
 			div.row(ng-repeat="todo in todoData")
-				div.container.row(data-id="{{ todo.id }}")
-					input(ng-checked="{{ todo.done }}", type="checkbox")
+				div.container.row
+					input(ng-checked="{{ todo.done }}", ng-click="actualizaTodo(todo.id)", type="checkbox")
 					p {{ todo.description }}
+					button.delete(ng-click="borraTodo(todo.id)") Borrar
 
